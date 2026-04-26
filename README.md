@@ -55,15 +55,15 @@ This application was engineered and submitted as a comprehensive university proj
       <b>Onboarding</b>
     </td>
     <td align="center">
-      <img src="https://via.placeholder.com/200x400?text=Login" alt="Login Screen" width="200"/><br>
+      <img src="assets\images\Screenshot 2026-04-26 230153.png" alt="Login Screen" width="200"/><br>
       <b>Login Flow</b>
     </td>
     <td align="center">
-      <img src="https://via.placeholder.com/200x400?text=Dashboard" alt="Dashboard" width="200"/><br>
-      <b>Personal Dashboard</b>
+      <img src="assets\images\Screenshot 2026-04-26 230635.png" alt="Dashboard" width="200"/><br>
+      <b>Search by date</b>
     </td>
     <td align="center">
-      <img src="https://via.placeholder.com/200x400?text=Stats+Chart" alt="Statistics Chart" width="200"/><br>
+      <img src="assets\images\Screenshot 2026-04-26 232802.png" alt="Statistics Chart" width="200"/><br>
       <b>Statistics & Charts</b>
     </td>
   </tr>
