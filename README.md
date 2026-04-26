@@ -51,7 +51,7 @@ This application was engineered and submitted as a comprehensive university proj
 <table>
   <tr>
     <td align="center">
-      <img src="https://via.placeholder.com/200x400?text=Onboarding" alt="Onboarding Screen" width="200"/><br>
+      <img src="C:\Users\asus\Pictures\Screenshots\Screenshot 2026-04-26 230153.png" alt="Onboarding Screen" width="200"/><br>
       <b>Onboarding</b>
     </td>
     <td align="center">
