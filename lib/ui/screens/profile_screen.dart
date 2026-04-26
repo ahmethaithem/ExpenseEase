@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../core/theme.dart';
 import '../../providers/user_provider.dart';
+import '../../providers/theme_provider.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -10,6 +11,7 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final userProvider = Provider.of<UserProvider>(context);
+    final themeProvider = Provider.of<ThemeProvider>(context);
 
     return Scaffold(
       appBar: AppBar(
@@ -42,6 +44,41 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 48),
+
+              // Appearance Settings
+              Text(
+                'Appearance',
+                style: TextStyle(
+                  color: AppTheme.secondaryTeal,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 1.2,
+                ),
+              ),
+              const SizedBox(height: 16),
+              Container(
+                decoration: BoxDecoration(
+                  color: isDark ? const Color(0xFF1E1E1E) : Colors.white,
+                  borderRadius: BorderRadius.circular(20),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.05),
+                      blurRadius: 10,
+                      offset: const Offset(0, 4),
+                    ),
+                  ],
+                ),
+                child: SwitchListTile(
+                  title: const Text('Dark Mode'),
+                  secondary: Icon(isDark ? Icons.nights_stay : Icons.wb_sunny, color: AppTheme.primaryPurple),
+                  value: themeProvider.isDarkMode,
+                  activeColor: AppTheme.primaryPurple,
+                  onChanged: (val) {
+                    themeProvider.toggleTheme();
+                  },
+                ),
+              ),
+              const SizedBox(height: 32),
 
               // Currency Settings
               Text(
