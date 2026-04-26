@@ -1,7 +1,5 @@
 <div align="center">
-  <!-- Logo Placeholder -->
-  <img src="https://via.placeholder.com/150x150?text=ExpenseEase+Logo" alt="ExpenseEase Logo" width="150" />
-
+ 
   <h1>ExpenseEase</h1>
   
   <p>
